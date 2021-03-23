@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 3(Question 2)
+	</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+</head>
+<body>
+	<h3 style="color: #27ae60;">
+			2. Design a HTML page to input two strings and write a JavaScript code segment to show whether the first
+			string is a substring of the second string or not.</h3>
+		<form onsubmit="prime()">
+			FIRST STRING : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" id="str1" placeholder="Enter Fist STRING" required />
+				<br><br>
+			LAST STRING : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" id="str2" placeholder="Enter second STRING">
+				<br>
+				<br>
+				<br>
+				<button onclick="check_substring()"id="btn1">Check</button>
+		</form>
+
+<script>
+      function check_substring()
+      {
+      	var s1 = document.getElementById("str1").value;
+      	var s2 = document.getElementById("str2").value;
+      	var res=0;
+
+      	if(s2.includes(s1))
+      	{
+      		alert("YES");
+      	}
+      	else
+      	{
+      		alert("NO");
+      	}
+      	
+      }
+
+
+</script>
+
+
+</body>
+</html>

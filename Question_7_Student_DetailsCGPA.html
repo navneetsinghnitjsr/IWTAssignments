@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 7(Assignment 3)</title>
+	<script >
+		function check(){
+			var m1,m2,m3,m4,m5,m6,cgpa,name1,name2,name3,name4,name5,name6;
+		 m1 = parseInt(document.myform.cg1.value);
+        m2 = parseInt(document.myform.cg2.value);
+        m3 = parseInt(document.myform.cg3.value);
+         m4 = parseInt(document.myform.cg4.value);
+        m5 = parseInt(document.myform.cg5.value);
+        m6 = parseInt(document.myform.cg6.value);
+        cgpa= parseInt(document.myform.num.value);
+        name1=document.myform.p1.value;
+        name2=document.myform.p2.value;
+        name3=document.myform.p3.value;
+        name4=document.myform.p4.value;
+        name5=document.myform.p5.value;
+        name6=document.myform.p6.value;
+
+        if(m1==cgpa){
+        	document.write(name1);
+        	document.write("<br>");
+        }
+        if(m2==cgpa){
+        	document.write(name2);
+        	document.write("<br>");
+        }
+        if(m3==cgpa){
+        	document.write(name3);
+        	document.write("<br>");
+        }
+        if(m4==cgpa){
+        	document.write(name4);
+        	document.write("<br>");
+        }
+        if(m5==cgpa){
+        	document.write(name5);
+        	document.write("<br>");
+        }
+        if(m6==cgpa){
+        	document.write(name6);
+        	
+        }
+		}
+	</script>
+	<style>
+		input{
+			height:30px;
+			width:200px;
+			letter-spacing: 2px;
+			font-size: 15px;
+			border-radius: 7px;
+			margin-left: 20px;
+			border:1px solid black;
+			text-align: center;
+		}
+	</style>
+
+	
+</head>
+<body style="margin:0 auto;">
+    <h3 style="color: #27ae60;">
+            7. Create an HTML page to input data of a student such as Registration number, Name and cgpa. Write
+JavaScript code to input a CGPA value and display the names of the student have same cgpa ignoring decimal
+places.</h3>
+	<form style="margin:0 auto;width:900px;" name="myform"><br><br>
+        <label style="margin-left:20px;"><b>Enter  Person Name and Lottery Number :</b></label><br><br>
+
+		<input type="text" name="p1" placeholder="Person 1">
+		<input id="lot" type="phone" name="r1" placeholder="Reg Number" >
+        <input id="lot" type="phone" name="cg1" placeholder="CGPA" >
+        <br><br>
+
+		<input type="text" name="p2" placeholder="Person 2">
+        <input id="lot" type="phone" name="r2" placeholder="Reg Number" >
+		<input id="lot" type="phone" name="cg2" placeholder="CGPA" ><br><br>
+
+		<input type="text" name="p3" placeholder="Person 3">
+        <input id="lot" type="phone" name="r3" placeholder="Reg Number" >
+		<input id="lot" type="phone" name="cg3" placeholder="CGPA" ><br><br>
+
+		<input type="text" name="p4" placeholder="Person 4">
+        <input id="lot" type="phone" name="r4" placeholder="Reg Number" >
+		<input id="lot" type="phone" name="cg4" placeholder="CGPA" ><br><br>
+
+		<input type="text" name="p5" placeholder="Person 5">
+        <input id="lot" type="phone" name="r5" placeholder="Reg Number">
+		<input id="lot" type="phone" name="cg5" placeholder="CGPA"><br><br>
+
+		<input type="text" name="p6" placeholder="Person 6">
+        <input id="lot" type="phone" name="r6" placeholder="Reg Number" >
+		<input id="lot" type="phone" name="cg6" placeholder="CGPA" ><br><br>
+
+        <label style="margin-left:20px;"><b>Enter  CGPA:</b></label><br><br>
+        <input type="text" name="num"  ><br><br><br>
+
+       <input type="button" name="Print"  value ="Print" onclick="check()" style="height:40px;width: 100px;border-radius: 10px;margin-left: 175px;background-color: aqua;font-size: 18px;letter-spacing: 3px;">
+
+	</form>
+</body>
+</html>

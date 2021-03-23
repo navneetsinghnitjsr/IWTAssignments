@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 3(Question 1)
+	</title>
+
+<style>
+	h3{
+		text-align: center;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		font-size: 25px;
+	}
+	form
+	{
+		text-align: center;
+
+	}
+	#result{
+		text-align: center;
+		font-size:20px;
+	}
+</style>
+</head>
+<body>
+<h3 style="color: #27ae60;">1. Design a HTML page to input two numbers and write a JavaScript code<br>&nbsp;&nbsp;&nbsp;&nbsp;segment to compute and display
+the gcd of two numbers on the page. </h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form onsubmit="prime()">
+	FIRST NUMBER<br>
+	<input type="number" name="firstnumber" id="first"><br>
+	Last Number<br>
+		<input type="number" name="lastname" id="last"><br>
+		<br>
+		<input type="submit" value="Calculate"><br>
+</form>
+
+<h4 id="result"></h2>
+<script type="text/javascript">
+	function prime() {
+		var first=document.getElementById("first").value;
+		var last=document.getElementById("last").value;
+		var result=document.getElementById("result ");
+		var i,hcf=1,min;
+		min=first<last? first:last;
+		for (i =1; i<=min; i++) 
+		{
+			if(first%i==0 && last%i==0){
+				hcf=i;
+			}
+		}	 
+		
+		alert("HCF is "+hcf);
+		result.innerHTML=hcf;
+		return false;
+	}
+</script>
+
+
+</body>
+</html>

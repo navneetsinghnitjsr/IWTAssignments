@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 3(Question 2)
+	</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+</head>
+<body>
+	<h1 style="color: #27ae60;">
+			3. Design a JavaScript code segment to change image on mouseover event</h1>
+			<br><br><br><br>
+
+			<img src="1.jpg" width="50%" height="50%" id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" style="margin-left:250px;">
+
+<script>
+function mouseOver() {
+  document.getElementById("demo").src="image/1.jpg";
+}
+
+function mouseOut() {
+  document.getElementById("demo").src="image/2.jpeg";
+}      
+
+
+</script>
+
+
+</body>
+</html>

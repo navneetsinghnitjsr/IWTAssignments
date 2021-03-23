@@ -1,0 +1,16 @@
+.h3
+{
+		text-align: center;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		font-size: 25px;
+}
+
+.form{
+		text-align: center;
+	}
+
+.result{
+		text-align: center;
+		font-size:20px;
+	}

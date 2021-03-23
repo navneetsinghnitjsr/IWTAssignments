@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 9_Verification(Assignment 3)</title>
+	<style>
+		input{
+			height:30px;
+			width:200px;
+			letter-spacing: 2px;
+			font-size: 15px;
+			border-radius: 7px;
+			margin-left: 40px;
+			border:1px solid black;
+			text-align: center;
+		}
+		label{
+			font-size: 15px;
+			letter-spacing: 2px;
+			margin-left:0px;
+		}
+	</style>
+</head>
+<body>
+	<h3 style="color: #27ae60;">
+            9. Create an HTML page to input username, password, and mobile number. Verify the correctness of the each
+field (preferably with regular expression). </h3>
+	<h3>All the fields marked with <span style="color: #EB5C6F;">*</span> are compulsory</h3><br>
+	<form>
+		<label for="name" >Username <span style="color: #EB5C6F;">*</span></label>
+         <input  name="username" required pattern="[A-Za-z0-9]+" style="margin-left: 85px;"><br><br>
+         <p><i>(letters and numbers only, no punctuation or special characters)</i></p><br><br>
+
+         <label for="password" >Password <span style="color: #EB5C6F;">*</span></label>
+         <input type="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required style="margin-left: 88px;"><br><br>
+         <p><i>(password must contain :
+         	<ul>
+         	<li>At least 1 Uppercase</li>
+         	 <li>At least 1 lowercase</li>
+         	 <li>At least 1 Number</li>
+         	  <li>At least 1 Symbol, symbols allowed--> !@#$%^&*_=+-</li>
+         	<li>Min 8 characters and Max 12 character)</li></i>
+            </ul>
+         </p><br><br>
+
+          <label for="contact" >Mobile Number <span style="color: #EB5C6F;">*</span></label>
+         <input type="phone" id="contact" pattern="[789][0-9]{9}" required maxlength="10"><br><br>
+         <p><i>(must be of 10 digits and start with 7,8 or 9)</i></p><br><br>
+
+         <input type="submit" value="Submit" style="width:90px; height:35px;color:white; background-color: #3EC6A1;border-radius: 25px;">
+
+	</form>
+
+</body>
+</html>
